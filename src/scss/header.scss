@@ -1,0 +1,24 @@
+@import '../../assets/scss/global';
+
+$padding: 16px;
+$primary-color: #9e9e9e;
+
+@mixin flexible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    .wrapper{
+    padding: $padding;
+    background-color: $primary-color;
+    
+    .nav{
+        @include flexible();
+        gap: 24px;
+        border: 1px solid $primary-color;
+    }
+}
+}
