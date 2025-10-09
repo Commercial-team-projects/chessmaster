@@ -1,0 +1,18 @@
+/*Base styles*/
+@import 'mixins';
+
+$bg-white: #fff;
+$color-white: #fff;
+$hover-link: #9f6f3c;
+
+body {
+  background-color: $bg-white;
+  @include mainFont;
+}
+section {
+  padding-top: 64px;
+}
+
+h2 {
+  @include sectionTitle;
+}

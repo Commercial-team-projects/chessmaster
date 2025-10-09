@@ -44,5 +44,10 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    css: {
+      preprocessorOptions: {
+        scss: {},
+      },
+    },
   };
 });
