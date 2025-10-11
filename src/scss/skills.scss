@@ -1,3 +1,28 @@
 /*Styles for section skills*/
 @import 'mixins';
 @import './base.scss';
+
+.skills-cont {
+  display: flex;
+  gap: 122px;
+  margin-bottom: 65px;
+  justify-content: center;
+}
+
+.skills-title {
+  @include sectionTitle;
+  margin-bottom: 36px;
+}
+.skills-list {
+}
+.skills-list-item {
+  width: 542px;
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+}
+.skills-btn {
+  @include button;
+  display: block;
+  margin: 0 auto;
+}
