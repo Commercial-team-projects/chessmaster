@@ -1,3 +1,30 @@
 /*Styles for section level*/
 @import 'mixins';
 @import './base.scss';
+
+.section {
+}
+.level-section {
+}
+.container {
+}
+.level-container {
+}
+.level-list {
+}
+.level-list-item {
+}
+.level-icon-container {
+}
+.level-item-icon {
+}
+.level-item-text {
+  @include mainFont;
+}
+.level-picture {
+}
+.level-image {
+}
+.btn {
+  @include button;
+}
