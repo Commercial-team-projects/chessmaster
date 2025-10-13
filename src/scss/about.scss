@@ -5,7 +5,9 @@
 .section {
 }
 .container {
+  @include container;
 }
+
 .about-title {
   @include sectionTitle;
   margin-bottom: 24px;
@@ -13,16 +15,17 @@
 .about {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 20px;
 }
 .about-image {
   display: block;
-  max-width: 100%;
+  //   max-width: 100%;
   object-fit: cover;
+  min-width: 570px;
 }
+
 .about-content {
-}
-.about-list {
+  min-width: 692px;
 }
 .about-list-item {
   display: flex;
@@ -40,9 +43,10 @@
 
 .about-statistics {
   display: flex;
-  display: flex;
   gap: 60px;
   text-align: center;
+  justify-content: space-around;
+  margin-bottom: 28px;
 }
 
 .stat-item {
@@ -52,13 +56,18 @@
 }
 
 .stat-number {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .stat-label {
   font-size: 14px;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
 .btn {
   @include button;
+  display: block;
 }
