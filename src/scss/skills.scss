@@ -19,7 +19,14 @@
   width: 542px;
   height: 78px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  &-percent {
+    height: 8px;
+    position: relative;
+    font-size: 20px;
+  }
 }
 .skills-btn {
   @include button;
