@@ -1,0 +1,84 @@
+@mixin container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@mixin mainFont {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1b1b1b;
+  line-height: 1.5;
+}
+
+@mixin button {
+  padding: 16px 44px;
+  min-width: 240px;
+  height: 55px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #34a853;
+}
+
+@mixin sectionTitle {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+@mixin textInter {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.03em;
+}
+
+@mixin link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* contacts */
+@mixin input {
+  border: 1px solid #69727d;
+  padding: 10px 8px;
+  width: 500px;
+  height: 40px;
+  max-width: 535px;
+  min-height: 40px;
+}
+
+/* testimonials */
+@mixin reviewName {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+}
+@mixin reviewDate {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+@mixin reviewFormat {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+@mixin reviewText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
