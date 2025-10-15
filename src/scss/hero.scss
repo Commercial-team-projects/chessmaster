@@ -1,3 +1,29 @@
 /*Styles for section hero*/
 @import 'mixins';
 @import './base.scss';
+
+.hero-container {
+  background-image: image-set(
+    url('../img/rs-sbg\ →\ image-min.jpg') 1x,
+    url('../img/rs-sbg\ →\ image@2x-min.jpg') 2x
+  );
+
+  padding-top: 127px;
+  padding-left: 175px;
+  padding-right: 175px;
+  padding-bottom: 78px;
+
+  .hero-title {
+    @include sectionTitle;
+    padding-bottom: 118px;
+  }
+  .hero-text {
+    text-align: center;
+    padding-bottom: 65px;
+  }
+  .hero-btn {
+    @include button;
+    display: block;
+    margin: 0 auto;
+  }
+}
