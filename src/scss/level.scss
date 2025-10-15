@@ -1,3 +1,78 @@
 /*Styles for section level*/
 @import 'mixins';
 @import './base.scss';
+
+.section {
+}
+.level-section {
+  padding-top: 64px 0;
+  background-color: #fff;
+}
+.container {
+}
+.level-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.level-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+.level-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.level-icon-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #f0f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  svg {
+    fill: #000;
+  }
+}
+.level-item-icon {
+  margin-right: 16px;
+}
+.level-item-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1b1b1b;
+  @include mainFont;
+}
+.level-picture {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.level-image img {
+  // width: 100%;
+  // height: auto;
+  width: 624px;
+  height: 439px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.btn {
+  @include button;
+  display: block;
+  margin: 40px auto 0;
+  color: #333;
+}
