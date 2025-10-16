@@ -1,3 +1,40 @@
 /*Styles for section study*/
 @import 'mixins';
 @import './base.scss';
+.study-title {
+    margin-bottom: 38px;
+}
+
+.study-list {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    column-gap: 120px;
+    row-gap: 32px; 
+    margin-bottom: 28px;
+    justify-content: center;
+}
+
+.study-list-item-description {
+    margin-bottom: 6px;
+    max-width: 506px;
+}
+
+.study-list-item-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.03em;
+    max-width: 496px;
+}
+
+.study-second-title {
+    margin-bottom: 42px;
+}
+
+.study-btn {
+    @include button;
+    display: block;
+    margin: 0 auto;
+}

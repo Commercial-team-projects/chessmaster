@@ -1,3 +1,71 @@
 /*Styles for section about*/
 @import 'mixins';
 @import './base.scss';
+
+.container {
+  @include container;
+}
+
+.about-title {
+  @include sectionTitle;
+  margin-bottom: 24px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.about-image {
+  display: block;
+  //   max-width: 100%;
+  object-fit: cover;
+  min-width: 570px;
+}
+
+.about-content {
+  min-width: 692px;
+}
+.about-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.about-icon-container {
+  display: flex;
+  align-items: center;
+}
+.about-text {
+  @include mainFont;
+}
+
+.about-statistics {
+  display: flex;
+  gap: 60px;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 28px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 40px;
+}
+
+.stat-label {
+  font-size: 14px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  @include button;
+  display: block;
+}

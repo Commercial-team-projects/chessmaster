@@ -1,3 +1,20 @@
 /*Styles for section advantages*/
 @import 'mixins';
 @import './base.scss';
+
+.advantages {
+    padding-top: 64px;
+
+&-title {
+    @include sectionTitle;
+    text-align: center;
+}
+
+&-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 51px;
+    @include mainFont;
+}
+}

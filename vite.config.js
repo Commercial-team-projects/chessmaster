@@ -4,6 +4,8 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
+
+
 export default defineConfig(({ command }) => {
   return {
     define: {
@@ -36,6 +38,13 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
       emptyOutDir: true,
+    },
+    css: {
+      preprocessorOptions:{
+        scss: {
+          additionalData: '@import "../chessmaster/assets/scss/global.scss";'
+        },
+      },
     },
     plugins: [
       injectHTML(),
