@@ -12,13 +12,8 @@
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
-<<<<<<< HEAD
-    "sass": "^1.92.1",
-    "sass-embedded": "^1.92.1",
-=======
     "sass": "^1.93.2",
     "sass-embedded": "^1.93.2",
->>>>>>> 7a8ec8ee3c61412117b9659a87de44a023c02095
     "vite": "^5.4.6"
   },
   "author": "",
