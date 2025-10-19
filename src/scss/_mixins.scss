@@ -21,7 +21,8 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
-  background-color: #34a853;
+  background-color: $btn-collor;
+  border-radius: 3px;
 }
 
 @mixin sectionTitle {
