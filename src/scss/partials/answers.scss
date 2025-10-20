@@ -1,2 +1,99 @@
-@import 'mixins';
+@import '../reset.scss';
 @import '../base.scss';
+@import '../mixins';
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+//start styles
+.faq-banner {
+  background-image: url(../../img/faq/1x/faq-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    color: $color-white;
+    padding-top: 56px;
+    padding-bottom: 92px;
+  }
+  &-title {
+    @include sectionTitle;
+    font-family: $font-montserrat;
+    line-height: 1.133;
+  }
+  &-breadscrumb {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @include textInter;
+    font-family: $font-montserrat;
+    font-size: 24px;
+  }
+}
+.faq-breadscrumb-icon {
+  display: block;
+  fill: $color-white;
+}
+.faq-list {
+  list-style-position: inside;
+
+  &-item {
+    border: 1px solid #ededed;
+  }
+  &-btn {
+    appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  &-btn:checked ~ &-question {
+    background-color: #ededed;
+  }
+  &-question {
+    @include sectionTitle;
+    text-align: left;
+    font-family: $font-montserrat;
+    font-size: 20px;
+    display: flex;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: background-color 500ms ease-out;
+
+    &:hover {
+      background-color: #ededed;
+    }
+    &:after {
+      content: '\002B';
+      margin-left: auto;
+    }
+  }
+  &-btn:checked ~ &-question:after {
+    content: '\2212';
+  }
+  &-btn:checked ~ &-answer {
+    display: block;
+  }
+  &-answer {
+    @include textInter;
+    font-family: $font-roboto;
+    font-size: 16px;
+    line-height: normal;
+    padding: 16px 32px;
+    display: none;
+
+    .faq-answer-link {
+      @include link;
+      color: blue;
+      font-size: 16px;
+
+      &:hover {
+        color: $hover-link;
+      }
+    }
+  }
+}
