@@ -2,8 +2,10 @@
 @import 'mixins';
 @import './base.scss';
 
+$bg-dark: #1b1b1b;
+
 .header-section {
-  background-color: #1b1b1b;
+  background-color: $bg-dark;
 
   .container {
     display: flex;
@@ -45,15 +47,34 @@
 }
 
 .lang-selector {
-  color: $color-white;
-  background-color: transparent;
-  border: none;
+  position: relative;
 }
 
-.lang-var {
-  background-color: transparent;
+.lang-list {
+  background-color: $bg-dark;
+  position: absolute;
+  top: 70;
+  left: 0;
+
+  display: none;
+
+  &.is-opened {
+    display: block;
+  }
 }
 
-// body {
-//   margin: 0;
-// }
+.lang-item {
+  padding: 8px 12px;
+
+  &:hover {
+    background-color: $hover-link;
+  }
+
+  &.current {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+}
