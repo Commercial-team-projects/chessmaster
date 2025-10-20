@@ -1,3 +1,80 @@
 /*Styles for section header*/
 @import 'mixins';
 @import './base.scss';
+
+$bg-dark: #1b1b1b;
+
+.header-section {
+  background-color: $bg-dark;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 71px;
+    margin: 15px 0;
+  }
+
+  .menu {
+    display: flex;
+    // align-items: stretch;
+    gap: 46px;
+  }
+
+  .btn {
+    margin: 0;
+    color: $color-white;
+  }
+}
+
+.menu-link {
+  @include link;
+  padding: 25px 0;
+}
+
+.link:hover {
+  color: $hover-link;
+}
+
+.btn:hover {
+  background-color: $hover-link;
+}
+
+.lang-selector {
+  position: relative;
+}
+
+.lang-list {
+  background-color: $bg-dark;
+  position: absolute;
+  top: 70;
+  left: 0;
+
+  display: none;
+
+  &.is-opened {
+    display: block;
+  }
+}
+
+.lang-item {
+  padding: 8px 12px;
+
+  &:hover {
+    background-color: $hover-link;
+  }
+
+  &.current {
+    display: none;
+  }
+}
+
+// body {
+//   margin: 0;
+// }
