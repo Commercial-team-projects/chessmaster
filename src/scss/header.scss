@@ -31,16 +31,6 @@
   }
 }
 
-.logo {
-  color: $color-white;
-
-  :hover {
-    fill: $hover-link;
-    stroke: $hover-link;
-    background-color: $hover-link;
-  }
-}
-
 .menu-link {
   @include link;
   padding: 25px 0;
